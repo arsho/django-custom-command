@@ -1,7 +1,6 @@
 ## Django Custom Command Example with Django Docs Polls Application
 This is the code repository of the following tutorial: [https://arshovon.com/blog/django-custom-command/](https://arshovon.com/blog/django-custom-command/)
 
-I have used Django Docs Example Polls Application to demonstrate Django Custom Command.
 
 ### Directory Structure
 
@@ -92,6 +91,12 @@ I have used Django Docs Example Polls Application to demonstrate Django Custom C
 - After running Django custom command the CSV file data is inserted into database:
 
 ![alt Polls page](/screenshots/polls_custom_django_command.png?style=center)  
+
+### Footnote
+
+- I have used Django Docs Example Polls Application to demonstrate Django Custom Command.
+- Utility methods of custom command files are kept in a separate file in `mysite/polls/management/commands/command_utils.py`. Then in custom command file I have imported required methods like: `from .command_utils import get_csv_file`
+
 
 
 ### Reference

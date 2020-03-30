@@ -1,9 +1,43 @@
 ## Django Custom Command Example with Django Docs Polls Application
 This is the code repository of the following tutorial: [https://arshovon.com/blog/django-custom-command/](https://arshovon.com/blog/django-custom-command/)
 
+I have used Django Docs Example Polls Application to demonstrate Django Custom Command.
+
 ### Directory Structure
 
-![alt Directory Structure](/screenshots/directory_structure.png?style=center)
+```
+.
+├── mysite
+│   ├── manage.py
+│   ├── mysite
+│   │   ├── asgi.py
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   └── polls
+│       ├── admin.py
+│       ├── apps.py
+│       ├── __init__.py
+│       ├── management
+│       │   └── commands
+│       │       ├── command_utils.py
+│       │       ├── insert_dummy_questions.py
+│       │       └── questions.csv
+│       ├── migrations
+│       │   ├── 0001_initial.py
+│       │   └── __init__.py
+│       ├── models.py
+│       ├── templates
+│       │   └── polls
+│       │       ├── detail.html
+│       │       ├── index.html
+│       │       └── results.html
+│       ├── tests.py
+│       ├── urls.py
+│       └── views.py
+└── requirements.txt
+```
 
 ### Installing Requirements
 - Python version: 3.6+
@@ -63,3 +97,4 @@ This is the code repository of the following tutorial: [https://arshovon.com/blo
 ### Reference
 - [Writing Django Custom Management Command](https://arshovon.com/blog/django-custom-command/)
 - [Custom commands in Django](https://docs.djangoproject.com/en/2.2/howto/custom-management-commands/)
+- [Writing your first Django app, part 1](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)
